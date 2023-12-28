@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Demonstrate a basic fact skill built with the ASK NodeJS SDK
+Resources:
+  dronepilotalexaskillskitnodejsfactskillXjFDI3ZaYleK:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs14.x
+      CodeUri: .
+      Description: Demonstrate a basic fact skill built with the ASK NodeJS SDK
+      MemorySize: 128
+      Timeout: 7
+      Role: >-
+        arn:aws:iam::354415165168:role/drone-pilot-alexaskillskitnodejsfactskillRole-8DEC7LSN4N57
+      Tags:
+        'lambda:createdBy': SAM
